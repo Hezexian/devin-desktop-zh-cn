@@ -1,6 +1,6 @@
-# Devin Desktop 中文界面
+# Devin Desktop 汉化包
 
-把 Devin Desktop 的菜单、首页、自定义页面和设置改成简体中文。
+为 Devin Desktop 提供简体中文汉化，覆盖菜单、首页、自定义页面和设置。
 
 **[下载最新安装包](https://github.com/Hezexian/devin-desktop-zh-gpt/releases/latest) · [查看发行记录](CHANGELOG.md) · [反馈漏译](https://github.com/Hezexian/devin-desktop-zh-gpt/issues)**
 
@@ -9,7 +9,7 @@
 把下面这段话发给能操作本机的 AI 助手即可：
 
 ```text
-请帮我安装并配置这个 Devin 中文汉化包：
+请帮我安装并配置这个 Devin Desktop 汉化包：
 https://github.com/Hezexian/devin-desktop-zh-gpt
 
 按 README 检查版本，下载兼容的最新发行包并完成汉化。保留现有配置和原文件备份，在 Devin 空闲时重启并检查效果。

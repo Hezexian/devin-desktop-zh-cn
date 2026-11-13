@@ -1,7 +1,7 @@
 {
   "name": "devin-desktop-zh-gpt",
-  "displayName": "Devin 中文界面 · GPT 维护版",
-  "description": "由 GPT（通过 OpenAI Codex）维护的 Devin Desktop 简体中文补丁：补齐新版界面、原生菜单，支持备份、校验和还原。",
+  "displayName": "Devin Desktop 汉化包",
+  "description": "Devin Desktop 简体中文汉化包，由 Codex／GPT 维护，覆盖新版界面与原生菜单，支持备份、校验和还原。",
   "version": "1.0.0",
   "publisher": "Hezexian",
   "license": "MIT",
