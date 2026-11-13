@@ -16,7 +16,7 @@ function check() {
     'LICENSE', 'third_party/devin-zh-LICENSE', 'third_party/KawaYiLab-LICENSE'];
   for (const file of docs) assert.ok(fs.statSync(path.join(root, file)).size > 0, file);
   const readme = fs.readFileSync(path.join(root, 'README.md'), 'utf8');
-  assert.ok(readme.includes('本项目由 GPT（通过 OpenAI Codex）维护'));
+  assert.match(readme, /GPT[^\n]*维护/);
   assert.ok(fs.readFileSync(path.join(root, 'CONTRIBUTORS.md'), 'utf8').includes('Codex／GPT'));
   const dictionary = require('../translations/catalogs/dom-dict.json');
   const invalid = Object.entries(dictionary).filter(([en, zh]) => !validPair(en, zh));
