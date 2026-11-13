@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "testedDate": "2026-11-13",
+  "supported": [
+    {
+      "productVersion": "3.12.59",
+      "codeOssVersion": "1.141.2",
+      "commit": "0122b42e158c7ca62960222fb9725f087cd9544f",
+      "testedPlatform": "Windows x64",
+      "languagePackTested": "MS-CEINTL.vscode-language-pack-zh-hans 1.131.0"
+    }
+  ],
+  "targets": [
+    {
+      "relative": "vs/sessions/sessions.desktop.main.js",
+      "originalSha256": "51eb5985eafa7c4c56171d2fdfd8c109f5327d28249344d0fe9369d32a1f57e0",
+      "localeMode": "zh"
+    },
+    {
+      "relative": "vs/workbench/windsurf-chat-client/index.js",
+      "originalSha256": "71155dcb6054fc69f80e142e9fbe5d585c59605a4af3d091293d00ae00c69832",
+      "localeMode": "zh"
+    },
+    {
+      "relative": "vs/workbench/devin-webapp-host/assets/entry-host-editor-mode-menu-DkFgenhN.js",
+      "originalSha256": "8be0496b300957ca1f6a2f507f326a4bfc81123a180d9f4519ad7816bc3490e8",
+      "localeMode": "local-english-ui-overlay"
+    }
+  ]
+}

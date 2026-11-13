@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "testedAt": "2026-11-13T15:13:05.598Z",
+  "vsixSha256": "c97ed0e601317b9ab203a0f55e2219ee9d1fd7633bd1b0721b5c062358a9ba53",
+  "nativeCliInstall": "passed in isolated extension/profile directories",
+  "installedPackageId": "Hezexian.devin-desktop-zh-gpt",
+  "syntheticTests": {
+    "injection": 11,
+    "languagePack": 10,
+    "workflow": 9,
+    "webhost": 1,
+    "dom": 15,
+    "total": 46
+  },
+  "realProgramCopy": {
+    "productVersion": "3.12.59",
+    "commit": "0122b42e158c7ca62960222fb9725f087cd9544f",
+    "sourceHashesVerified": 3,
+    "firstApplyChanged": 4,
+    "repeatedApplyChanged": 0,
+    "restoreChanged": 4,
+    "bundleRestoreByteIdentical": true,
+    "languagePackRestoreByteIdentical": true,
+    "productRestoredSemantically": true,
+    "pausedAfterRestore": true,
+    "warnings": []
+  },
+  "realUi": {
+    "basis": "Core localization runtime previously applied and checked in actual Windows Devin 3.12.59; release identity and compatibility wrapper additionally tested above",
+    "pages": [
+      "Home and rotating composer hints",
+      "Plugins",
+      "Skills",
+      "MCP",
+      "Hooks",
+      "Rules",
+      "Subagents and search placeholder",
+      "Memory",
+      "App settings",
+      "Preferences",
+      "File/Edit/View/Go/Help native menus"
+    ]
+  },
+  "notVerified": [
+    "macOS/Linux actual Devin UI",
+    "Other Devin commits",
+    "Full model interactions",
+    "Every enterprise/billing/error page"
+  ]
+}

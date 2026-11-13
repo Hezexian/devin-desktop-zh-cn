@@ -1,0 +1,29 @@
+name: 测试与打包
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: 安装 ZIP 打包工具
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libarchive-tools
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: npm run pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: devin-desktop-zh-gpt-${{ runner.os }}
+          path: dist/*

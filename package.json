@@ -1,0 +1,42 @@
+{
+  "name": "devin-desktop-zh-gpt",
+  "displayName": "Devin 中文界面 · GPT 维护版",
+  "description": "由 GPT（通过 OpenAI Codex）维护的 Devin Desktop 简体中文补丁：补齐新版界面、原生菜单，支持备份、校验和还原。",
+  "version": "1.0.0",
+  "publisher": "Hezexian",
+  "license": "MIT",
+  "private": true,
+  "engines": { "vscode": "^1.80.0", "node": ">=22" },
+  "categories": ["Other", "Localization"],
+  "keywords": ["devin", "chinese", "localization", "codex", "gpt", "汉化", "中文"],
+  "main": "./extension.js",
+  "extensionKind": ["ui"],
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      { "command": "devin-zh-gpt.apply", "title": "Devin GPT 汉化: 应用汉化" },
+      { "command": "devin-zh-gpt.restore", "title": "Devin GPT 汉化: 还原原版" },
+      { "command": "devin-zh-gpt.openRules", "title": "Devin GPT 汉化: 打开翻译词典" }
+    ],
+    "configuration": {
+      "title": "Devin GPT 汉化",
+      "properties": {
+        "devinZhGpt.autoApply": { "scope": "application", "type": "boolean", "default": true, "description": "启动时自动应用兼容版本的汉化；完成后需要完全退出并重新打开 Devin。未适配版本会停止应用。" },
+        "devinZhGpt.customTranslations": { "scope": "application", "type": "object", "additionalProperties": { "type": "string" }, "default": {}, "description": "自定义译文，例如 {\"英文原文\":\"中文\"}。保留原文占位符，修改后执行应用汉化并完全重启。" },
+        "devinZhGpt.exclude": { "scope": "application", "type": "array", "items": { "type": "string" }, "default": [], "description": "保持原文的词条；优先于自定义翻译。修改后执行应用汉化并完全重启。" }
+      }
+    }
+  },
+  "repository": { "type": "git", "url": "https://github.com/Hezexian/devin-desktop-zh-gpt.git" },
+  "homepage": "https://github.com/Hezexian/devin-desktop-zh-gpt#readme",
+  "bugs": { "url": "https://github.com/Hezexian/devin-desktop-zh-gpt/issues" },
+  "scripts": {
+    "test": "node tools/test.js",
+    "check": "node tools/check-release.js",
+    "patch": "node tools/patch-devin.js",
+    "restore": "node tools/patch-devin.js --restore",
+    "pack": "node tools/pack-vsix.js"
+  },
+  "dependencies": { "acorn": "8.19.0" },
+  "devDependencies": { "jsdom": "26.1.0" }
+}
