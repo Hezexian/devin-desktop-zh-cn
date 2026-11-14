@@ -27,9 +27,9 @@
       }
     }
   },
-  "repository": { "type": "git", "url": "https://github.com/Hezexian/devin-desktop-zh-gpt.git" },
-  "homepage": "https://github.com/Hezexian/devin-desktop-zh-gpt#readme",
-  "bugs": { "url": "https://github.com/Hezexian/devin-desktop-zh-gpt/issues" },
+  "repository": { "type": "git", "url": "https://github.com/Hezexian/devin-desktop-zh-cn.git" },
+  "homepage": "https://github.com/Hezexian/devin-desktop-zh-cn#readme",
+  "bugs": { "url": "https://github.com/Hezexian/devin-desktop-zh-cn/issues" },
   "scripts": {
     "test": "node tools/test.js",
     "check": "node tools/check-release.js",

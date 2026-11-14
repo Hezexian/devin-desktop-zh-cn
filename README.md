@@ -2,7 +2,7 @@
 
 为 Devin Desktop 提供简体中文汉化，覆盖菜单、首页、自定义页面和设置。
 
-**[下载最新安装包](https://github.com/Hezexian/devin-desktop-zh-gpt/releases/latest) · [查看发行记录](CHANGELOG.md) · [反馈漏译](https://github.com/Hezexian/devin-desktop-zh-gpt/issues)**
+**[下载最新安装包](https://github.com/Hezexian/devin-desktop-zh-cn/releases/latest) · [查看发行记录](CHANGELOG.md) · [反馈漏译](https://github.com/Hezexian/devin-desktop-zh-cn/issues)**
 
 ## 让 AI 帮你安装
 
@@ -10,7 +10,7 @@
 
 ```text
 请帮我安装并配置这个 Devin Desktop 汉化包：
-https://github.com/Hezexian/devin-desktop-zh-gpt
+https://github.com/Hezexian/devin-desktop-zh-cn
 
 按 README 检查版本，下载兼容的最新发行包并完成汉化。保留现有配置和原文件备份，在 Devin 空闲时重启并检查效果。
 ```
@@ -21,7 +21,7 @@ https://github.com/Hezexian/devin-desktop-zh-gpt
 <summary>手动安装步骤</summary>
 
 1. 点击左上角的模式菜单进入编辑器，安装[微软简体中文语言包](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)。执行 `Configure Display Language`，选择 `中文(简体) / zh-cn`。
-2. 从 [Releases](https://github.com/Hezexian/devin-desktop-zh-gpt/releases/latest) 下载 `.vsix` 文件。
+2. 从 [Releases](https://github.com/Hezexian/devin-desktop-zh-cn/releases/latest) 下载 `.vsix` 文件。
 3. 按 `Ctrl+Shift+P`，执行“**从 VSIX 安装**”（`Extensions: Install from VSIX...`），选择下载的文件。
 4. 执行“**Devin GPT 汉化: 应用汉化**”，完成后完全退出并重新打开 Devin。
 
@@ -37,7 +37,7 @@ https://github.com/Hezexian/devin-desktop-zh-gpt
 - 插件介绍、安装提示、子智能体搜索框。
 - 应用设置、智能体介绍、偏好设置。
 
-品牌名、技能标识和用户内容保留原文。发现漏译，可以在 [Issues](https://github.com/Hezexian/devin-desktop-zh-gpt/issues) 提供英文原文和所在页面。
+品牌名、技能标识和用户内容保留原文。发现漏译，可以在 [Issues](https://github.com/Hezexian/devin-desktop-zh-cn/issues) 提供英文原文和所在页面。
 
 ## 命令与还原
 
@@ -72,8 +72,8 @@ https://github.com/Hezexian/devin-desktop-zh-gpt
 开发需要 Node.js 22+。Windows 使用系统自带的 `tar.exe`，Linux 打包需安装 `libarchive-tools`。
 
 ```sh
-git clone https://github.com/Hezexian/devin-desktop-zh-gpt.git
-cd devin-desktop-zh-gpt
+git clone https://github.com/Hezexian/devin-desktop-zh-cn.git
+cd devin-desktop-zh-cn
 npm ci --ignore-scripts
 npm test
 npm run pack
